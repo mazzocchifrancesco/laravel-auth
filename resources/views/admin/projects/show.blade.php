@@ -24,6 +24,8 @@
 								<p class="fw-light">{{ $project->description }}</p>
 								<p class="fw-bold">{{ $project->supervisor }}</p>
 								<p class="">{{ $project->creation_date }}</p>
+                                <a href="{{ route('admin.projects.edit', $project->id) }}" class="btn btn-warning">Modifica</a>
+
 							</div>
 						</div>
 					</div>
