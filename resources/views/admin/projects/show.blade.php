@@ -25,6 +25,11 @@
 								<p class="fw-bold">{{ $project->supervisor }}</p>
 								<p class="">{{ $project->creation_date }}</p>
                                 <a href="{{ route('admin.projects.edit', $project->id) }}" class="btn btn-warning">Modifica</a>
+                                <form action="{{ route('admin.projects.destroy', $project->id) }}" method="POST" class="d-inline-block">
+                                    @csrf
+                                    @method('DELETE')
+                                    <input type="submit" value="Elimina" class="btn btn-danger">
+                                </form>
 
 							</div>
 						</div>
