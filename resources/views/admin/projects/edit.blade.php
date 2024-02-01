@@ -20,35 +20,35 @@
             @method('PUT')
 			<div class="mb-3">
 				<label for="name" class="form-label">name</label>
-				<input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{old("name")}}" >
+				<input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{old("name") ?? $project->name}}" >
 				@error('title')
 					<div class="invalid-feedback">{{ $message }}</div>
 				@enderror
 			</div>
 			<div class="mb-3">
 				<label for="description" class="form-label">description</label>
-				<input type="text" class="form-control @error('description') is-invalid @enderror" id="description" name="description" value="{{old("description")}}">
+				<input type="text" class="form-control @error('description') is-invalid @enderror" id="description" name="description" value="{{old("description") ?? $project->description}}">
 				@error('description')
 					<div class="invalid-feedback">{{ $message }}</div>
 				@enderror
 			</div>
 			<div class="mb-3">
 				<label for="image" class="form-label">image</label>
-				<input type="text" class="form-control @error('image') is-invalid @enderror" id="image" name="image" value="{{old("image")}}">
+				<input type="text" class="form-control @error('image') is-invalid @enderror" id="image" name="image" value="{{old("image") ?? $project->image}}">
 				@error('image')
 					<div class="invalid-feedback">{{ $message }}</div>
 				@enderror
 			</div>
 			<div class="mb-3">
 				<label for="creation_date" class="form-label">creation_date</label>
-				<input type="date" class="form-control @error('creation_date') is-invalid @enderror" id="creation_date" name="creation_date" value="{{old("creation_date")}}">
+				<input type="date" class="form-control @error('creation_date') is-invalid @enderror" id="creation_date" name="creation_date" value="{{old("creation_date") ?? $project->creation_date}}">
 				@error('creation_date')
 					<div class="invalid-feedback">{{ $message }}</div>
 				@enderror
 			</div>
 			<div class="mb-3">
 				<label for="supervisor" class="form-label">supervisor</label>
-				<input type="text" class="form-control @error('supervisor') is-invalid @enderror" id="supervisor" name="supervisor" value="{{old("supervisor")}}">
+				<input type="text" class="form-control @error('supervisor') is-invalid @enderror" id="supervisor" name="supervisor" value="{{old("supervisor") ?? $project->supervisor}}">
 				@error('supervisor')
 					<div class="invalid-feedback">{{ $message }}</div>
 				@enderror

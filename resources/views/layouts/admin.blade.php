@@ -35,20 +35,19 @@
 									<i class="fa-solid fa-home-alt fa-lg fa-fw"></i> Home
 								</a>
 							</li>
-
 							<li class="nav-item">
-								<a class="nav-link text-white {{ Route::currentRouteName() == 'admin.dashboard' ? 'bg-secondary' : '' }}" href="{{route('admin.dashboard')}}">
-									<i class="fa-solid fa-tachometer-alt fa-lg fa-fw"></i> Dashboard
+								<a class="nav-link text-white {{ Route::currentRouteName() == 'admin.projects.create' ? 'bg-secondary' : '' }}" href="{{route('admin.dashboard')}}">
+									<i class="fa-solid fa-gears fa-lg fa-fw"></i> Dashboard
 								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link text-white {{ Route::currentRouteName() == 'admin.projects.index' ? 'bg-secondary' : '' }}" href="{{route('admin.projects.index')}}">
-									<i class="fa-solid fa-tachometer-alt fa-lg fa-fw"></i> Index
+									<i class="fa-solid fa-list fa-lg fa-fw"></i> Index
 								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link text-white {{ Route::currentRouteName() == 'admin.projects.create' ? 'bg-secondary' : '' }}" href="{{route('admin.projects.create')}}">
-									<i class="fa-solid fa-tachometer-alt fa-lg fa-fw"></i> Crea Progetto
+									<i class="fa-solid fa-plus fa-lg fa-fw"></i> Crea Progetto
 								</a>
 							</li>
 

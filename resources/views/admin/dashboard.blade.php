@@ -16,20 +16,6 @@
 
 					{{ __('You are logged in!') }}
 
-					<div id="cardBox" class="container">
-						<div class="row">
-						@foreach ($data as $progetto)
-							<div class="col-2" id="card">
-								<img class="cardImg" src={{$progetto->image}} alt="">
-								<p class="text-uppercase fw-bold">{{ $progetto->name }}</p>
-								<p class="fw-light">{{ $progetto->description }}</p>
-								<p class="fw-bold">{{ $progetto->supervisor }}</p>
-								<p class="">{{ $progetto->creation_date }}</p>
-
-							</div>
-							@endforeach
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
