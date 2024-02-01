@@ -18,16 +18,13 @@
 
 					<div id="cardBox" class="container">
 						<div class="row">
-						@foreach ($data as $progetto)
 							<div class="col-2" id="card">
-								<img class="cardImg" src={{$progetto->image}} alt="">
-								<p class="text-uppercase fw-bold">{{ $progetto->name }}</p>
-								<p class="fw-light">{{ $progetto->description }}</p>
-								<p class="fw-bold">{{ $progetto->supervisor }}</p>
-								<p class="">{{ $progetto->creation_date }}</p>
-                                <a href="{{ route('admin.projects.show', $progetto->id) }}" class="btn btn-primary">Mostra dettagli</a>
+								<img class="cardImg" src={{$project->image}} alt="">
+								<p class="text-uppercase fw-bold">{{ $project->name }}</p>
+								<p class="fw-light">{{ $project->description }}</p>
+								<p class="fw-bold">{{ $project->supervisor }}</p>
+								<p class="">{{ $project->creation_date }}</p>
 							</div>
-							@endforeach
 						</div>
 					</div>
 				</div>
